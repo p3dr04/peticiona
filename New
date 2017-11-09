@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    float i;
+    float fig;
+    int a1, a2;
+    int preco;
+    
+    a1=1;
+    a2=1;
+    
+    fig=0;
+    preco=0;
+    
+    for(i=1; i<641; i++){
+                         
+             a1=-a1;
+             if(a1==-1)
+             a2=-a2;            
+                
+             fig=fig+640/(641-i);
+             preco=(fig+5)/5;
+             
+             if(a1+a2==2)
+             printf("Para %.0f figuras, precisa de %.2f pacotes e custa %.2f reais\n", i, fig, preco*0.75);
+             
+             }
+             
+    system("pause");
+    
+    return 0;
+    
+}
